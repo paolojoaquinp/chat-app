@@ -13,7 +13,7 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
 
-    const { socket, online, conectarSocket, desconectarSocket } = useSocket('https://react-chat-app.herokuapp.com/');
+    const { socket, online, conectarSocket, desconectarSocket } = useSocket('https://chat-backend-eta.vercel.app/');
     const { auth } = useContext( AuthContext );
     const { dispatch } = useContext( ChatContext );
 
