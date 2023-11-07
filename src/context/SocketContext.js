@@ -13,7 +13,7 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
 
-    const { socket, online, conectarSocket, desconectarSocket } = useSocket('https://chat-backend-eta.vercel.app/');
+    const { socket, online, conectarSocket, desconectarSocket } = useSocket('https://chat-backend-production-9aa4.up.railway.app/');
     const { auth } = useContext( AuthContext );
     const { dispatch } = useContext( ChatContext );
 
